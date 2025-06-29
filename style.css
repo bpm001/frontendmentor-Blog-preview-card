@@ -76,6 +76,7 @@ body{
     align-items: center;
     gap: 10px;
     font-weight: 900;
+    margin-bottom: 1em;
 }
 .card .avatar figure img{
     width: 45px;
@@ -91,7 +92,7 @@ body{
     }
 
     .card{
-        width: 375px;
+        width: 370px;
     }
     
 }
