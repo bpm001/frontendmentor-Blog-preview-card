@@ -89,7 +89,7 @@ body{
     justify-content: center;
 }
 /* desde 376px en adelante*/
-@media (min-width: 376px){
+@media (min-width: 768px){
     body{
     
     }
