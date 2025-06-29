@@ -1,0 +1,101 @@
+/* Variables */
+@font-face{
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+    font-style: normal;
+}
+:root{
+    --background-primary: hsl(47,88%,63%);
+    --background-card-primary: hsl(0, 0%, 100%);
+    --gray-500: hsl(0,0%,42%);
+    --gray-950: hsl(0,0%,7%);
+    
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    boz-sizing:border-box;
+    font-weight: 500;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-primary);
+    font-family: 'Figtree';
+}
+
+.card{
+    
+    border-radius: 15px;
+    background-color: var(--background-card-primary);
+    border: 2px solid #000;
+    box-shadow: 10px 10px 1px rgba(0, 0, 0, 1);/* arriba derecha abajo izquierda*/
+    margin: 10% 5% 10% 5%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;/*espaciado entre elementos*/
+}
+.card header figure{
+    /*margin: 0 auto;*/
+    margin-bottom: 10px;
+    
+}
+.card badge{
+    font-weight: 800;
+    background-color: var(--background-primary);
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    width: fit-content;
+}
+.card h6{
+    font-weight: 700;
+}
+.card header figure img{
+    width: 100%;
+    border-radius: 15px;
+}
+.card h2{
+    font-size: 17px;
+    font-weight: 800;
+}
+.card p{
+    font-size: 16px;
+    color: var(--gray-500);
+    text-align: left;
+    
+}
+.card .avatar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+}
+.card .avatar figure img{
+    width: 45px;
+}
+.attribution{
+    display: flex;
+    justify-content: center;
+}
+/* desde 376px en adelante*/
+@media (min-width: 376px){
+    body{
+    
+    }
+
+    .card{
+        width: 375px;
+    }
+    
+}
+/* desde 1440px */
+@media (min-width: 1440px){
+
+}
